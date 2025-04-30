@@ -1,12 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { Link } from "react-router-dom";
+import { Button, Container, Typography, Box } from "@mui/material";
 
 const Index = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+      <Container maxWidth="md">
+        <Box sx={{ textAlign: 'center', my: 4 }}>
+          <Typography variant="h2" component="h1" gutterBottom>
+            Image Gallery Showcase
+          </Typography>
+          <Typography variant="h5" sx={{ mb: 4 }}>
+            A demo of locally stored and cached images
+          </Typography>
+          <Button 
+            component={Link} 
+            to="/landing-page" 
+            variant="contained" 
+            size="large"
+            color="primary"
+          >
+            View Gallery
+          </Button>
+        </Box>
+      </Container>
     </div>
   );
 };
