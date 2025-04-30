@@ -48,7 +48,7 @@ const LandingPage = () => {
 
       <Grid container spacing={3}>
         {galleryData.map((item) => (
-          <Grid item key={item.id} xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={4} key={item.id}>
             <Card sx={{ 
               height: '100%', 
               display: 'flex', 
